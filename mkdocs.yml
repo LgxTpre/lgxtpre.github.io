@@ -44,6 +44,15 @@ copyright: Copyright &copy; 2023 LgxTpre
 hooks:
   - hooks/on_env.py
 
+nav:  
+  - 开始:  
+    - 开始: index.md
+  - 下一节:  
+    - 下一节: gxdnb.md
+    - 数据结构:  
+      - 简介: ds/ds.md
+      - Splay: ds/splay.md
+
 extra:
   generator: true
   social:
