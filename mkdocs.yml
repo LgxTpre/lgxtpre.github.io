@@ -50,7 +50,6 @@ nav:
     - 常用缺省源: default_source.md
     - AT/CF缺省源: ATCF_default_source.md
   - 图论: 
-    - Start: graph/index.md
     - tarjan: graph/tarjan.md
     - 圆方树: graph/cstree
   - 数据结构:  
