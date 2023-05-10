@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lgxtpre.github.io/</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lgxtpre.github.io/ATCF_default_source/</loc>
+         <lastmod>2023-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lgxtpre.github.io/default_source/</loc>
+         <lastmod>2023-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lgxtpre.github.io/ds/LCT/</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
