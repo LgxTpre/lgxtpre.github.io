@@ -51,7 +51,7 @@ nav:
     - AT/CF缺省源: ATCF_default_source.md
   - 图论: 
     - tarjan: graph/tarjan.md
-    - 圆方树: graph/cstree
+    - 圆方树: graph/cstree.md
   - 数据结构:  
     - 并查集: ds/DSU.md
     - LCT: ds/LCT.md
