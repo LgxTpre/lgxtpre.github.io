@@ -52,6 +52,7 @@ nav:
   - 图论: 
     - tarjan: graph/tarjan.md
     - 圆方树: graph/cstree.md
+    - 网络流: graph/flow.md
   - 数据结构:  
     - 并查集: ds/DSU.md
     - LCT: ds/LCT.md
