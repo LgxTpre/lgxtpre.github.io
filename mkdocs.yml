@@ -55,6 +55,8 @@ nav:
   - 数据结构:  
     - 并查集: ds/DSU.md
     - LCT: ds/LCT.md
+  - 数论:
+    - Pollard_Rho: math/Pollard_Rho.md
 
 extra:
   generator: true
