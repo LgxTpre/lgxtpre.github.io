@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lgxtpre.github.io/graph/flow/</loc>
+         <lastmod>2023-05-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lgxtpre.github.io/graph/tarjan/</loc>
          <lastmod>2023-05-15</lastmod>
          <changefreq>daily</changefreq>
