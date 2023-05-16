@@ -26,12 +26,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lgxtpre.github.io/graph/MST/</loc>
+         <lastmod>2023-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lgxtpre.github.io/graph/cstree/</loc>
          <lastmod>2023-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lgxtpre.github.io/graph/flow/</loc>
+         <lastmod>2023-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lgxtpre.github.io/graph/shortpath/</loc>
          <lastmod>2023-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
