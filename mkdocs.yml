@@ -50,6 +50,8 @@ nav:
     - 常用缺省源: default_source.md
     - AT/CF缺省源: ATCF_default_source.md
   - 图论: 
+    - 最短路相关: graph/shortpath.md
+    - 最小生成树: graph/MST.md
     - tarjan: graph/tarjan.md
     - 圆方树: graph/cstree.md
     - 网络流: graph/flow.md
