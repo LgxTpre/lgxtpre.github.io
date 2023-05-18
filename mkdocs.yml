@@ -53,12 +53,12 @@ nav:
     - 最短路相关: graph/shortpath.md
     - 最小生成树: graph/MST.md
     - tarjan: graph/tarjan.md
-    - 圆方树: graph/cstree.md
     - 网络流: graph/flow.md
   - 数据结构:  
     - 并查集: ds/DSU.md
     - LCT: ds/LCT.md
   - 数论:
+    - 筛法: math/Sieve.md
     - Pollard_Rho: math/Pollard_Rho.md
 
 extra:
