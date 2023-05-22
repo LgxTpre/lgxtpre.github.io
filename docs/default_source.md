@@ -9,9 +9,12 @@
 #define eb emplace_back
 #define pb pop_back
 #define mp make_pair
+#define pii pair<int,int>
 #define fi first
 #define se second
-#define pii pair<int,int>
+#define power(x) ((x)*(x))
+#define gcd(x,y) __gcd(x,y)
+#define lg(x,y)  __lg(x,y)
 using namespace std;
 
 template<typename T=int> inline T read()
@@ -37,18 +40,17 @@ namespace MyTool
 	template<typename T> inline void Swp(T &a,T &b) {T t=a;a=b;b=t;}
 	template<typename T> inline void cmax(T &a,T b) {a=a>b?a:b;}
 	template<typename T> inline void cmin(T &a,T b) {a=a<b?a:b;}
-	inline void Madd(int &a,int b) {a=a+b>Mod?a+b-Mod:a+b;}
-	inline void Mdel(int &a,int b) {a=a-b<0?a-b+Mod:a-b;}
-	inline void Mmul(int &a,int b) {a=1ll*a*b%Mod;}
-	inline void Mmod(int &a) {a=(a%Mod+Mod)%Mod;}
-	inline int  Cadd(int a,int b)  {return a+b>=Mod?a+b-Mod:a+b;}
-	inline int  Cdel(int a,int b)  {return a-b<0?a-b+Mod:a-b;}
-	inline int  Cmul(int a,int b)  {return a*b%Mod;}
-	inline int  Cmod(int a)  {return (a%Mod+Mod)%Mod;}
-	inline int  gcd(int a,int b)   {return b?gcd(b,a%b):a;}
-	inline int  qpow(int a,int b)  {int res=1; while(b) {if(b&1) Mmul(res,a); Mmul(a,a); b>>=1;} return res;}
-	inline int  qmul(int a,int b)  {int res=0; while(b) {if(b&1) Madd(res,a); Madd(a,a); b>>=1;} return res;}
-	template<typename T> inline T power(T x)    {return x*x;}
+	template<typename T> inline void Madd(T &a,T b) {a=a+b>Mod?a+b-Mod:a+b;}
+	template<typename T> inline void Mdel(T &a,T b) {a=a-b<0?a-b+Mod:a-b;}
+	template<typename T> inline void Mmul(T &a,T b) {a=1ll*a*b%Mod;}
+	template<typename T> inline void Mmod(T &a)     {a=(a%Mod+Mod)%Mod;}
+	template<typename T> inline T    Cadd(T a,T b)  {return a+b>=Mod?a+b-Mod:a+b;}
+	template<typename T> inline T    Cdel(T a,T b)  {return a-b<0?a-b+Mod:a-b;}
+	template<typename T> inline T    Cmul(T a,T b)  {return a*b%Mod;}
+	template<typename T> inline T    Cmod(T a)      {return (a%Mod+Mod)%Mod;}
+	inline int qpow(int a,int b) {int res=1; while(b) {if(b&1) Mmul(res,a); Mmul(a,a); b>>=1;} return res;}
+	inline int qmul(int a,int b) {int res=0; while(b) {if(b&1) Madd(res,a); Madd(a,a); b>>=1;} return res;}
+	inline int Qpow(int a,int b) {int res=1; while(b) {if(b&1) res=qmul(res,a); a=qmul(a,2); b>>=1;} return res;} 
 }
 using namespace MyTool;
 
