@@ -42,7 +42,7 @@ namespace MyTool
 	template<typename T> inline void cmin(T &a,T b) {a=a<b?a:b;}
 	template<typename T> inline void Madd(T &a,T b) {a=a+b>Mod?a+b-Mod:a+b;}
 	template<typename T> inline void Mdel(T &a,T b) {a=a-b<0?a-b+Mod:a-b;}
-	template<typename T> inline void Mmul(T &a,T b) {a=1ll*a*b%Mod;}
+	template<typename T> inline void Mmul(T &a,T b) {a=a*b%Mod;}
 	template<typename T> inline void Mmod(T &a)     {a=(a%Mod+Mod)%Mod;}
 	template<typename T> inline T    Cadd(T a,T b)  {return a+b>=Mod?a+b-Mod:a+b;}
 	template<typename T> inline T    Cdel(T a,T b)  {return a-b<0?a-b+Mod:a-b;}
@@ -50,7 +50,7 @@ namespace MyTool
 	template<typename T> inline T    Cmod(T a)      {return (a%Mod+Mod)%Mod;}
 	inline int qpow(int a,int b) {int res=1; while(b) {if(b&1) Mmul(res,a); Mmul(a,a); b>>=1;} return res;}
 	inline int qmul(int a,int b) {int res=0; while(b) {if(b&1) Madd(res,a); Madd(a,a); b>>=1;} return res;}
-	inline int Qpow(int a,int b) {int res=1; while(b) {if(b&1) res=qmul(res,a); a=qmul(a,2); b>>=1;} return res;} 
+	inline int Qpow(int a,int b) {int res=1; while(b) {if(b&1) res=qmul(res,a); a=qmul(a,a); b>>=1;} return res;} 
 }
 using namespace MyTool;
 

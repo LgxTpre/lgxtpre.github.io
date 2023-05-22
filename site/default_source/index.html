@@ -830,7 +830,7 @@
 <span class="kt">signed</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="c1">//  file();</span>
-<span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="s">&quot;%.3lf MB</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,(</span><span class="o">&amp;</span><span class="n">Med</span><span class="o">-&amp;</span><span class="n">Mbe</span><span class="p">)</span><span class="o">/</span><span class="mf">1048576.0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="s">&quot;%.3lf MB</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">abs</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Med</span><span class="o">-&amp;</span><span class="n">Mbe</span><span class="p">)</span><span class="o">/</span><span class="mf">1048576.0</span><span class="p">);</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">Tbe</span><span class="o">=</span><span class="n">clock</span><span class="p">();</span>
 <span class="w">    </span><span class="n">LgxTpre</span><span class="o">::</span><span class="n">lmy_forever</span><span class="p">();</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">Ted</span><span class="o">=</span><span class="n">clock</span><span class="p">();</span>
