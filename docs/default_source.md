@@ -82,7 +82,7 @@ bool Med;
 signed main()
 {
 //	file();
-	fprintf(stderr,"%.3lf MB\n",(&Med-&Mbe)/1048576.0);
+	fprintf(stderr,"%.3lf MB\n",abs(&Med-&Mbe)/1048576.0);
 	int Tbe=clock();
 	LgxTpre::lmy_forever();
 	int Ted=clock();
