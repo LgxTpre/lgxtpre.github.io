@@ -14,6 +14,7 @@
 #define se second
 #define power(x) ((x)*(x))
 #define gcd(x,y) __gcd(x,y)
+#define lcm(x,y) (x*y/gcd(x,y))
 #define lg(x,y)  __lg(x,y)
 using namespace std;
 
