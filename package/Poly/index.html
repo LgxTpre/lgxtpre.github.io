@@ -833,13 +833,19 @@
 
 <p>使用注意事项：</p>
 <ol>
-<li>要先运行<code>Prework()</code>，参数是多项式最高度数，有时候答案不对可能是初始化小了，开大点试试。</li>
+<li>要先运行<code>Prework</code>，参数是多项式最高度数，有时候答案不对可能是初始化小了，开大点试试。</li>
 <li>NTT 的模数不同需要更改 <code>Prework</code> 的参数，若模数为 <span class="arithmatex">\(r \times 2^k + 1\)</span>，那么 <span class="arithmatex">\(GT\)</span> 改为 <span class="arithmatex">\(k - 2\)</span>，<span class="arithmatex">\(GR\)</span> 改为 <span class="arithmatex">\(g^r\)</span>，其中 <span class="arithmatex">\(g\)</span> 为模数的原根。</li>
 <li>赋值用 <code>.pin</code>，输出用 <code>.pout</code>。</li>
+<li>多项式封装了一个 <code>poly</code> 类，里头是自取模的 <code>ModInt</code> 类，模数不同需要修改 <code>Mod</code>。</li>
 </ol>
 <p>各函数意义：</p>
 <ol>
-<li></li>
+<li>乘法直接用 <code>*</code>；除法如果同时求商和余数用 <code>Div</code>，返回一个 <code>poly</code> 二元组，否则直接用 <code>/</code> 或者 <code>%</code> 即可。</li>
+<li><code>Inv</code> 为求逆，<code>Dvt</code> 为求导，<code>Igt</code> 为积分。</li>
+<li><code>Ln</code> 为求对数，<code>Exp</code> 为求指数。</li>
+<li><code>Sqr</code> 为开方，传参 <span class="arithmatex">\(tp = 1\)</span> 返回 <span class="arithmatex">\(\sqrt{a}\)</span>，<span class="arithmatex">\(tp = -1\)</span> 返回 <span class="arithmatex">\(\dfrac{1}{\sqrt{a}}\)</span>。</li>
+<li><code>Pow</code> 为快速幂，第一个非 <span class="arithmatex">\(0\)</span> 项为常数，传幂次直接传数值，否则传进去一个字符串。</li>
+<li>三角函数和反三角函数同函数名。</li>
 </ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
 <span class="normal">  2</span>
