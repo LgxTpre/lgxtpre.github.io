@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -834,9 +839,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          高斯消元相关
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         高斯消元相关
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    求解异或方程组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    求解行列式
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -867,6 +908,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    求解异或方程组
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    求解行列式
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -887,7 +950,8 @@
 
   <h1>高斯消元相关</h1>
 
-<p>高斯消元求解异或方程组，传参 <span class="arithmatex">\(n\)</span> 是方程个数，<span class="arithmatex">\(m\)</span> 是未知元个数。</p>
+<h3 id="_1">求解异或方程组<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>传参 <span class="arithmatex">\(n\)</span> 是方程个数，<span class="arithmatex">\(m\)</span> 是未知元个数。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -922,7 +986,8 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>高斯消元辗转相除法求解行列式，搭配 <code>ModNum</code> 使用。</p>
+<h3 id="_2">求解行列式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>使用辗转相除法，搭配 <code>ModNum</code> 使用。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>

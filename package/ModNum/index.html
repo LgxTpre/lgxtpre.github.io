@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -460,9 +465,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ModNum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         ModNum
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    定模数版本
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    可变模数
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -867,6 +908,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    定模数版本
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    可变模数
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -887,7 +950,9 @@
 
   <h1>ModNum</h1>
 
-<p>如果是定模数，可以直接使用下面这个，只需要修改 <code>const</code> 的那个 <span class="arithmatex">\(Mod\)</span> 就行，输入输出需要加上 <span class="arithmatex">\(.x\)</span>。</p>
+<p>普通情况下更推荐使用常用缺省源里的 <code>MTool</code>，更加方便好用，只需要更改 <code>Mod</code> 的值。</p>
+<h3 id="_1">定模数版本<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>只需要修改 <code>const</code> 的那个 <span class="arithmatex">\(Mod\)</span> 的值就行，输入输出需要加上 <span class="arithmatex">\(.x\)</span>。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -966,7 +1031,8 @@
 <span class="w">    </span><span class="p">};</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>可变模数快速取模，更改模数调用 <code>ChangeMod</code>。</p>
+<h3 id="_2">可变模数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>更改模数调用 <code>ChangeMod</code>。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
