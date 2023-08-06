@@ -1060,8 +1060,7 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">StringRead</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">StringRead</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">ValidChar</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="o">&gt;=</span><span class="sc">&#39;a&#39;</span><span class="o">&amp;&amp;</span><span class="n">c</span><span class="o">&lt;=</span><span class="sc">&#39;z&#39;</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">c</span><span class="o">&gt;=</span><span class="sc">&#39;A&#39;</span><span class="o">&amp;&amp;</span><span class="n">c</span><span class="o">&lt;=</span><span class="sc">&#39;Z&#39;</span><span class="p">);}</span>
 <span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">readstr</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">str</span><span class="p">)</span>
@@ -1072,7 +1071,6 @@
 <span class="w">        </span><span class="o">*</span><span class="p">(</span><span class="n">str</span><span class="o">+</span><span class="n">len</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="sc">&#39;\0&#39;</span><span class="p">;</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">len</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">StringRead</span><span class="p">;</span>
 </code></pre></div></td></tr></table></div>
 
 
