@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://lgxtpre.github.io/ds/BIT/</loc>
+         <lastmod>2023-08-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://lgxtpre.github.io/ds/BST/</loc>
          <lastmod>2023-08-17</lastmod>
          <changefreq>daily</changefreq>
@@ -37,6 +42,11 @@
     </url>
     <url>
          <loc>https://lgxtpre.github.io/ds/SGT/</loc>
+         <lastmod>2023-08-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lgxtpre.github.io/ds/ST/</loc>
          <lastmod>2023-08-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
