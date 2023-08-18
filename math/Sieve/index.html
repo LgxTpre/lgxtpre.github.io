@@ -1193,12 +1193,7 @@
 <span class="normal">79</span>
 <span class="normal">80</span>
 <span class="normal">81</span>
-<span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span>
-<span class="normal">86</span>
-<span class="normal">87</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">Sieve</span>
+<span class="normal">82</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">Sieve</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">=</span><span class="mi">100000</span><span class="p">;</span>
 <span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">MAX</span><span class="o">=</span><span class="mi">10010</span><span class="p">;</span>
@@ -1214,7 +1209,6 @@
 <span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">i</span><span class="o">%</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">phi</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">];</span>
@@ -1231,7 +1225,6 @@
 <span class="w">                </span><span class="k">else</span><span class="w">      </span><span class="p">{</span><span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">];</span><span class="w"> </span><span class="k">break</span><span class="p">;}</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mu</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">];</span>
@@ -1248,7 +1241,6 @@
 <span class="w">                </span><span class="k">else</span><span class="w">      </span><span class="p">{</span><span class="n">mu</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;}</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">],</span><span class="n">num</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">];</span>
@@ -1265,7 +1257,6 @@
 <span class="w">                </span><span class="k">else</span><span class="w">      </span><span class="p">{</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">*</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span><span class="w"> </span><span class="k">break</span><span class="p">;}</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">f</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">],</span><span class="n">g</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">];</span>
@@ -1282,7 +1273,6 @@
 <span class="w">                </span><span class="k">else</span><span class="w">      </span><span class="p">{</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="k">break</span><span class="p">;}</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
