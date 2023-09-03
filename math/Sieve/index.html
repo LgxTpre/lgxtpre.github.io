@@ -1231,25 +1231,17 @@
 <span class="normal">75</span>
 <span class="normal">76</span>
 <span class="normal">77</span>
-<span class="normal">78</span>
-<span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">Sieve</span>
+<span class="normal">78</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">Sieve</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">=</span><span class="mi">100000</span><span class="p">;</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">MAX</span><span class="o">=</span><span class="mi">10010</span><span class="p">;</span>
+<span class="w">    </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">=</span><span class="mi">100000</span><span class="p">;</span>
+
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">vis</span><span class="p">[</span><span class="n">N</span><span class="o">+</span><span class="mi">10</span><span class="p">],</span><span class="n">P</span><span class="p">[</span><span class="n">MAX</span><span class="p">],</span><span class="n">Pcnt</span><span class="p">;</span>
 <span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">Linear_Sieve</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">N</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">vis</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="n">P</span><span class="p">[</span><span class="o">++</span><span class="n">Pcnt</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span>
-<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">Pcnt</span><span class="o">&amp;&amp;</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">N</span><span class="p">;</span><span class="o">++</span><span class="n">j</span><span class="p">)</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="n">vis</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-<span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">i</span><span class="o">%</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">Pcnt</span><span class="o">&amp;&amp;</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">N</span><span class="p">;</span><span class="o">++</span><span class="n">j</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">vis</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">i</span><span class="o">%</span><span class="n">P</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="w"> </span><span class="k">break</span><span class="p">;}</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
