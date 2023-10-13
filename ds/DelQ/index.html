@@ -10,14 +10,14 @@
         <meta name="author" content="LgxTpre">
       
       
-        <link rel="canonical" href="https://lgxtpre.github.io/ds/LCT/">
+        <link rel="canonical" href="https://lgxtpre.github.io/ds/DelQ/">
       
       <link rel="icon" href="../..">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>LCT - LgxTpre's Repository</title>
+        <title>可删堆 - LgxTpre's Repository</title>
       
     
     
@@ -71,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LCT
+              可删堆
             
           </span>
         </div>
@@ -932,11 +927,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../DelQ/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         可删堆
       </a>
+      
     </li>
   
 
@@ -1002,48 +1005,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          LCT
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LCT/" class="md-nav__link">
         LCT
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    通用模板
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1267,21 +1233,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    通用模板
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1294,15 +1245,14 @@
                 
                   
 
-  <a href="https://github.com/LgxTpre/lgxtpre.github.io/edit/main/docs/ds/LCT.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/LgxTpre/lgxtpre.github.io/edit/main/docs/ds/DelQ.md" title="编辑此页" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>LCT</h1>
+  <h1>可删堆</h1>
 
-<h3 id="_1">通用模板<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1312,68 +1262,16 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">Link_Cat_Tree</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">DelQueue</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">fa</span><span class="p">[</span><span class="n">MAX</span><span class="p">],</span><span class="n">ch</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span><span class="n">tag</span><span class="p">[</span><span class="n">MAX</span><span class="p">],</span><span class="n">siz</span><span class="p">[</span><span class="n">MAX</span><span class="p">],</span><span class="n">val</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w">      </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">ch</span><span class="p">[</span><span class="n">fa</span><span class="p">[</span><span class="n">i</span><span class="p">]][</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">i</span><span class="p">;}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">noroot</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w">   </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">ch</span><span class="p">[</span><span class="n">fa</span><span class="p">[</span><span class="n">i</span><span class="p">]][</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span><span class="o">==</span><span class="n">i</span><span class="p">;}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">pushup</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w">   </span><span class="p">{</span><span class="n">siz</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">siz</span><span class="p">[</span><span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span><span class="o">+</span><span class="n">siz</span><span class="p">[</span><span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span><span class="o">+</span><span class="mi">1</span><span class="p">;}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">down</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w">     </span><span class="p">{</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span><span class="w"> </span><span class="n">tag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">^=</span><span class="mi">1</span><span class="p">,</span><span class="n">Swp</span><span class="p">(</span><span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]);}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">pushdown</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="k">if</span><span class="p">(</span><span class="n">tag</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="n">down</span><span class="p">(</span><span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span><span class="n">down</span><span class="p">(</span><span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span><span class="n">tag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">pushall</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="k">if</span><span class="p">(</span><span class="n">noroot</span><span class="p">(</span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="n">pushall</span><span class="p">(</span><span class="n">fa</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"> </span><span class="n">pushdown</span><span class="p">(</span><span class="n">i</span><span class="p">);}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">rotate</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">fa</span><span class="p">[</span><span class="n">x</span><span class="p">],</span><span class="n">z</span><span class="o">=</span><span class="n">fa</span><span class="p">[</span><span class="n">y</span><span class="p">];</span>
-<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">k1</span><span class="o">=</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">k2</span><span class="o">=</span><span class="n">get</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">noroot</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="w"> </span><span class="n">ch</span><span class="p">[</span><span class="n">z</span><span class="p">][</span><span class="n">k2</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="n">fa</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">=</span><span class="n">z</span><span class="p">;</span>
-<span class="w">        </span><span class="n">ch</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">k1</span><span class="p">]</span><span class="o">=</span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="o">!</span><span class="n">k1</span><span class="p">],</span><span class="n">fa</span><span class="p">[</span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="o">!</span><span class="n">k1</span><span class="p">]]</span><span class="o">=</span><span class="n">y</span><span class="p">;</span>
-<span class="w">        </span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="o">!</span><span class="n">k1</span><span class="p">]</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="n">fa</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">;</span>
-<span class="w">        </span><span class="n">pushup</span><span class="p">(</span><span class="n">y</span><span class="p">),</span><span class="n">pushup</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">splay</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">pushall</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">noroot</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">fa</span><span class="p">[</span><span class="n">x</span><span class="p">];</span>
-<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">noroot</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">^</span><span class="n">get</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="o">?</span><span class="n">rotate</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">:</span><span class="n">rotate</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
-<span class="w">            </span><span class="n">rotate</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">access</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w">      </span><span class="p">{</span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">x</span><span class="p">;</span><span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="n">fa</span><span class="p">[</span><span class="n">x</span><span class="p">])</span><span class="w"> </span><span class="n">splay</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="n">pushup</span><span class="p">(</span><span class="n">x</span><span class="p">);}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">makeroot</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w">    </span><span class="p">{</span><span class="n">access</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">splay</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">down</span><span class="p">(</span><span class="n">x</span><span class="p">);}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w">  </span><span class="nf">findroot</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w">    </span><span class="p">{</span><span class="n">access</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">splay</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="k">while</span><span class="p">(</span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="n">pushdown</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x</span><span class="o">=</span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">splay</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x</span><span class="p">;}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">split</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">makeroot</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">access</span><span class="p">(</span><span class="n">y</span><span class="p">),</span><span class="n">splay</span><span class="p">(</span><span class="n">y</span><span class="p">);}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">link</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="n">makeroot</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">findroot</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">!=</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">fa</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">=</span><span class="n">y</span><span class="p">;}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">cut</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w">  </span><span class="p">{</span><span class="n">makeroot</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">findroot</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">==</span><span class="n">x</span><span class="o">&amp;&amp;</span><span class="n">fa</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">==</span><span class="n">x</span><span class="o">&amp;&amp;!</span><span class="n">ch</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="n">fa</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">=</span><span class="n">ch</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">pushup</span><span class="p">(</span><span class="n">x</span><span class="p">);}</span>
-<span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">check</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">findroot</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">==</span><span class="n">findroot</span><span class="p">(</span><span class="n">y</span><span class="p">);}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="n">priority_queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q1</span><span class="p">,</span><span class="n">q2</span><span class="p">;</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ins</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">q1</span><span class="p">.</span><span class="n">emplace</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">sum</span><span class="o">+=</span><span class="n">x</span><span class="p">;}</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">del</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">q2</span><span class="p">.</span><span class="n">emplace</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">sum</span><span class="o">-=</span><span class="n">x</span><span class="p">;}</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">rew</span><span class="p">()</span><span class="w">      </span><span class="p">{</span><span class="k">while</span><span class="p">(</span><span class="n">q1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&amp;&amp;</span><span class="n">q2</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&amp;&amp;</span><span class="n">q1</span><span class="p">.</span><span class="n">top</span><span class="p">()</span><span class="o">==</span><span class="n">q2</span><span class="p">.</span><span class="n">top</span><span class="p">())</span><span class="w"> </span><span class="n">q1</span><span class="p">.</span><span class="n">pop</span><span class="p">(),</span><span class="n">q2</span><span class="p">.</span><span class="n">pop</span><span class="p">();}</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w">  </span><span class="nf">top</span><span class="p">()</span><span class="w">      </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">rew</span><span class="p">(),</span><span class="n">q1</span><span class="p">.</span><span class="n">top</span><span class="p">();}</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">pop</span><span class="p">()</span><span class="w">      </span><span class="p">{</span><span class="n">sum</span><span class="o">-=</span><span class="n">top</span><span class="p">(),</span><span class="n">q1</span><span class="p">.</span><span class="n">pop</span><span class="p">();}</span>
+<span class="w">        </span><span class="kr">inline</span><span class="w"> </span><span class="kt">int</span><span class="w">  </span><span class="nf">size</span><span class="p">()</span><span class="w">     </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">q1</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="n">q2</span><span class="p">.</span><span class="n">size</span><span class="p">();}</span>
+<span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 
 
@@ -1400,7 +1298,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../KDT/" class="md-footer__link md-footer__link--prev" aria-label="上一页: KDTree" rel="prev">
+        <a href="../LT/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 左偏树" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1409,20 +1307,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              KDTree
+              左偏树
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../math/Basic/" class="md-footer__link md-footer__link--next" aria-label="下一页: 数学基础" rel="next">
+        <a href="../BIT/" class="md-footer__link md-footer__link--next" aria-label="下一页: 树状数组" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              数学基础
+              树状数组
             </div>
           </div>
           <div class="md-footer__button md-icon">
